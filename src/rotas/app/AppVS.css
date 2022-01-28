@@ -1,0 +1,72 @@
+.app-container{
+  width: 100%;
+  max-width: 550px;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+.app-container > h1{
+  text-align: center;
+  font-size: 17px;
+  margin-bottom: 30px;
+}
+
+.feed-box,
+.post-box{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.post-box{
+  margin: 30px 0;
+}
+.post-box img{
+  width: 100%;
+  max-width: 550px;
+}
+
+.info-post{
+  width: 100%;
+  margin-top: 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.name-desc{
+  width: 100%;
+
+  display: flex;
+  align-items: flex-start;
+}
+.name-desc h1{
+  font-size: 15px;
+  color: #555;
+}
+.name-desc p{
+  margin-left: 5px;
+
+  font-size: 14px;
+  word-break: break-word;
+}
+
+.aviso-feed{
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.aviso-feed h1{
+  font-size: 17px;
+  
+}
+
+@media screen and (max-width: 600px) {
+  .post-box{
+    padding: 0 20px;
+  }
+}

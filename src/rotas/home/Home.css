@@ -1,0 +1,83 @@
+.home-container{
+  width: 100%;
+  height: 100vh;
+
+  background-image: url(../../images/background.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.content-1{
+  width: 100%;
+  height: 100%;
+  padding: 0 40px;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.content-1 h1{
+  font-size: 5vw;
+}
+.content-1 a{
+  width: 150px;
+  padding: 10px 15px;
+  margin-top: 20px;  
+
+  display: block;
+  text-align: center;
+  text-decoration: none;
+
+  border-radius: 3px;
+  background-color: #000;
+  color: #fff;
+}
+
+.aviso-creditos{
+  width: 250px;
+  height: 170px;
+  padding: 15px;
+
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+
+  visibility: hidden;
+  opacity: 0;
+  transition: .3s;
+
+  border-radius: 3px;
+  box-shadow: 5px 5px 15px #444;
+  background-color: #eee;
+
+  text-align: justify;
+}
+.aviso-creditos h1{
+  margin-bottom: 10px;
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+}
+.aviso-creditos span{
+  position: absolute;
+  top: -10px;
+  right: -10px;
+
+  font-size: 25px;
+  cursor: pointer;
+}
+.active-modal-aviso{
+  visibility: visible;
+  opacity: 1;
+}
+
+@media screen and (max-width: 800px) {
+  .content-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .content-1 h1{
+    text-align: center;
+    font-size: 30px;
+  }
+}

@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+
+/* PALETA DE CORES */
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Montserrat, sans-serif;
+}
+
+body{
+  scroll-behavior: smooth;
+}
+body::-webkit-scrollbar{
+  width: 5px;
+}
+body::-webkit-scrollbar-thumb{
+  width: 5px;
+  border-radius: 5px;
+  background-color: #222;
+}

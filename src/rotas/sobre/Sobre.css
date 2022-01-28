@@ -1,0 +1,42 @@
+.sobre-container{
+  width: 100%;
+  padding: 100px 30px;
+}
+.sobre-container h1{
+  font-size: 17px;
+}
+
+.sobre-box{
+  width: 100%;
+  margin: 20px 0;
+}
+.sobre-box p{
+  margin-top: 10px;
+  width: 95%;
+  text-align: justify;
+}
+
+.sobre-sociais{
+  display: flex;
+  list-style: none;
+}
+.sobre-sociais li{
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .3s;
+
+  border: 1px solid #000;
+  border-radius: 50%;
+}
+.sobre-sociais li:hover{
+  transform: scale(1.1);
+}
+.sobre-sociais li a{
+  color: #000;
+  font-size: 25px;
+}

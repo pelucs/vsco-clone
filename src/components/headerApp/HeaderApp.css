@@ -1,0 +1,244 @@
+.headerApp-container{
+  width: 100%;
+  height: 50px;
+  padding: 0 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background-color: #eee;
+}
+
+.headerApp-container > .logo-box img{
+  width: 100%;
+  max-width: 30px;
+}
+
+.menu-user{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  position: relative;
+}
+.menu-user p{
+  font-size: 14px;
+}
+.menu-user > span ion-icon{
+  margin: 0 5px;
+  font-size: 20px;
+
+  position: relative;
+  top: 2px;
+}
+.menu-user > p:hover,
+.menu-user > span ion-icon:hover{
+  color: #555;
+}
+.menu-app{
+  width: 200px;
+  height: 0;
+  padding: 0 10px;
+
+  position: absolute;
+  top: 50px;
+  right: 0;
+
+  list-style: none;
+  visibility: hidden;
+  transition: .3s;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+
+  border-radius: 5px;
+  background-color: #eee;
+}
+.menu-app li{
+  padding: 15px 0;
+  border-bottom: 1px solid #ccc;
+}
+.menu-app li a{
+  display: flex;
+  align-items: center;
+
+  color: #000;
+  font-size: 14px;
+  text-decoration: none;
+}
+.menu-app li a ion-icon{
+  margin-right: 10px;
+  font-size: 17px;
+}
+.menu-app li:last-of-type{
+  border: 0;
+}
+.active-menu-user{
+  height: 195px;
+  visibility: visible;
+}
+
+.modal-postagem-container{
+  width: 100%;
+  height: 100vh;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  visibility: hidden;
+  opacity: 0;
+  transition: .3s;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.modal-postagem-box{
+  width: 100%;
+  max-width: 300px;
+  height: 350px;
+  position: relative;
+
+  border-radius: 5px;
+  background-color: #fff;
+}
+.modal-postagem-box > span{
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  font-size: 30px;
+  cursor: pointer;
+}
+.modal-postagem-box h1,
+.modal-upload-post h1{
+  width: 100%;
+  padding: 10px 0;
+
+  font-size: 15px;
+  font-weight: 400;
+  text-align: center;
+
+  border-bottom: 1px solid #ccc;
+}
+.button-postar{
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.button-postar > span{
+  font-size: 35px;
+}
+.button-postar input{
+  display: none;
+}
+.button-postar label{
+  width: 200px;
+  padding: 10px 0;
+  margin-top: 30px;
+
+  border-radius: 3px;
+  background-color: #000;
+  color: #fff;
+
+  text-align: center;
+  cursor: pointer;
+}
+.active-modal-postagem{
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal-upload-post{
+  width: 100%;
+  max-width: 450px;
+  padding-bottom: 20px;
+
+  position: relative;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  border-radius: 5px;
+  background-color: #fff;
+}
+.modal-upload-post > span{
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  font-size: 30px;
+  cursor: pointer;
+}
+.back-modal{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+
+  font-size: 20px;
+  cursor: pointer;
+}
+.img-box-post{
+  width: 100%;
+  padding: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img-box-post img{
+  width: 100%;
+  max-width: 350px;
+}
+.modal-upload-post input{
+  width: 100%;
+  max-width: 350px;
+  padding: 10px;
+  height: 40px;
+  margin: 15px 0;
+
+  outline: none;
+  border-radius: 3px;
+  border: 1px solid #000;
+  background-color: transparent;
+}
+#aviso{
+  margin: 5px 0;
+  font-size: 13px;
+  color: #e63946;
+  display: none;
+}
+.modal-upload-post button{
+  width: 100%;
+  max-width: 350px;
+  padding: 15px 0;
+  margin-top: 10px;
+
+  border: 0;
+  border-radius: 3px;
+  background-color: #000;
+  color: #fff;
+
+  cursor: pointer;
+  outline: none;
+}
+
+@media screen and (max-width: 700px) {
+  .headerApp-container{
+    padding: 0 20px;
+  }
+  .menu-user p{
+    display: none;
+  }
+  .menu-user span ion-icon{
+    font-size: 25px;
+  }
+}

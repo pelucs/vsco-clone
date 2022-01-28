@@ -1,0 +1,77 @@
+.cadastro-container{
+  width: 100%;
+  padding: 85px 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box-auth{
+  width: 100%;
+  max-width: 400px;
+  margin-top: 40px;
+}
+.box-auth h1{
+  margin-bottom: 30px;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+}
+.inputs-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.inputs-box input{
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 17px;
+
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  background-color: transparent;
+  
+  outline: none;
+  transition: .3s;
+}
+.inputs-box input:focus{
+  border-bottom-color: #000;
+}
+.inputs-box input:focus::placeholder{
+  color: #000;
+}
+.buttons-box{
+  width: 90%;
+  margin: 10px auto;
+
+  display: flex;
+  justify-content: space-between;
+}
+.buttons a, 
+.buttons span{
+  margin: 5px 0;
+
+  cursor: pointer;
+  display: block;
+
+  color: #bbb;
+  font-size: 11px;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.buttons-box button{
+  width: 180px;
+
+  border: 0;
+  border-radius: 3px;
+  background-color: #eee;
+  color: #ccc;
+
+  outline: none;
+}
+.active-button{
+  color: #fff !important;
+  background-color: #000 !important;
+  cursor: pointer !important;
+}
